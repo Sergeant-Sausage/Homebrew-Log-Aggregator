@@ -39,6 +39,8 @@ if "access_token" in result:
     }
     response = requests.get(ENDPOINT, headers=headers, params=params)
 
+## write to file, and report error if one is encountered
+    
     if response.status_code == 200:
         signins = response.json().get("value", [])
         with open("entra_signins.json", "w") as f:
