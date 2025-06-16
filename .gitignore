@@ -196,3 +196,4 @@ cython_debug/
 ## Custom exclusions
 entra_signins.json
 config.json
+data/
