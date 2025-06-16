@@ -1,6 +1,7 @@
 import json
 import os
 
+
 def normalize_entra_logs(input_file, output_file):
     with open(input_file, 'r') as f:
         raw_logs = json.load(f)
@@ -31,7 +32,7 @@ def normalize_entra_logs(input_file, output_file):
     with open(output_file, 'w') as f:
         json.dump(normalized_logs, f, indent=2)
 
-    print(f"✅ Normalized log written to: {output_file}")
+    print(f"Normalized log written to: {output_file}")
 
 
 if __name__ == "__main__":
